@@ -1,0 +1,171 @@
+html {
+  background-color: #e4e9fd;
+  background-image: linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+  min-height: 100vh;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  min-height: 95vh;
+  margin: 0;
+}
+
+main {
+  text-align: center;
+  flex: 1 0 auto;
+}
+
+h1 {
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+#heading {
+  background-color: #a683e3;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+.box {
+  max-width: 450px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px 25px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.3);
+  margin-right: 10px;
+}
+
+p {
+  flex: 1;
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+form.edit input[type="text"] {
+  flex: 1;
+  font-size: 1.1rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+form.edit button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  filter: invert(30%);
+}
+
+input[type="text"] {
+  font-size: 1.1rem;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-bottom: 2px solid #a683e3;
+}
+
+::placeholder {
+  color: lightgray;
+}
+
+form.item {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+form.item input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button.add {
+  background-color: #a683e3;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.add:hover {
+  background-color: #825bc4;
+}
+
+button.edit {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  flex: 0 0 auto;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
